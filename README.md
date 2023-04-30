@@ -14,7 +14,7 @@ Blinkr is a lightweight and easy-to-use desktop application that runs in the bac
 -   Lightweight and easy to use
 
 ## Installation
-Blinkr is available for Windows, macOS, and Linux. You can download the latest release from the [Blinkr GitHub repository](https://github.com/username/blinkr).
+Blinkr is available for Windows, macOS, and Linux. You can download the latest release from the [Blinkr GitHub repository](https://github.com/MBennington/blinkr).
 
 ## Usage
 1.  Install and run Blinkr on your desktop
@@ -23,9 +23,6 @@ Blinkr is available for Windows, macOS, and Linux. You can download the latest r
 4.  Blinkr will remind you to blink your eyes at regular intervals
 5.  Take a break and blink your eyes to keep them hydrated and healthy
 
-
 ## Contributing
-Contributions are always welcome. If you want to contribute to the project, please check out the [contributing guidelines](https://github.com/username/blinkr/blob/main/CONTRIBUTING.md) and [code of conduct](https://github.com/username/blinkr/blob/main/CODE_OF_CONDUCT.md).
+Contributions are always welcome.
 
-## License
-Blinkr is open-source software licensed under the [MIT License](https://github.com/username/blinkr/blob/main/LICENSE).
