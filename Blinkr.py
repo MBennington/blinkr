@@ -81,7 +81,26 @@ while True:
                 notification_visible = False
         else:
             no_blink_time += 1  # increment time since last blink
-            
+            if no_blink_time > 75 and not notification_visible:  # 3.5 seconds have passed and notification is not already visible
+                cv2.namedWindow("Notification", cv2.WINDOW_GUI_NORMAL )
+                cv2.setWindowProperty("Notification", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+                cv2.setWindowProperty("Notification", cv2.WND_PROP_TOPMOST, 1)  # make the window always stay on top
+                
+                cv2.resizeWindow("Notification", 200, 200)
+                
+                # Get screen dimensions
+                screen_width, screen_height = pyautogui.size()
+
+                # Calculate the window position to center it
+                window_width, window_height = 250, 250
+                window_x = int((screen_width - window_width) / 2)
+                window_y = int((screen_height - window_height) / 2)
+
+                # Move and show the window
+                cv2.moveWindow("Notification", window_x, window_y)
+
+                cv2.imshow("Notification", cv2.imread("notification.png")) 
+                notification_visible = True
 
 
         if counter != 0:
